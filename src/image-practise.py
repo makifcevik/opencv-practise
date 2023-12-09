@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("./assets/flower.png", -1)
+img = cv2.imread("../assets/flower.png", -1)
 
 # horizontal lines
 for i in range(10):
