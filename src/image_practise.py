@@ -1,7 +1,10 @@
 import numpy as np
 import cv2
+import os
 
-img = cv2.imread("../assets/chessboard.png", 1)
+script_dir = os.path.dirname(os.path.realpath(__file__))
+img_path = os.path.join(script_dir, "../assets/chessboard.png")
+img = cv2.imread(img_path)
 
 # horizontal lines
 for i in range(10):
